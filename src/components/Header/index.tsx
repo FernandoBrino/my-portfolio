@@ -49,9 +49,13 @@ export const Header = () => {
             </button>
           )}
 
-          <button className="text-background px-4 py-1.5 bg-title rounded-xl">
+          <a
+            className="text-background px-4 py-1.5 bg-title rounded-xl"
+            href="https://drive.google.com/file/d/1QqY3fC2bnDcEV66irdEB74FmM-DYQMba/view?usp=sharing"
+            target="_blank"
+          >
             Download CV
-          </button>
+          </a>
         </div>
       </div>
     </div>

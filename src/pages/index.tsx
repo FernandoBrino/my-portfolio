@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profilePicture from "@/assets/profile.jpg";
+import profilePicture from "@/assets/profile.jpeg";
 import { Header } from "@/components/Header";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsCircleFill, BsWhatsapp } from "react-icons/bs";
@@ -13,7 +13,7 @@ export default function Home() {
       <div className="flex justify-center items-center p-[6.25rem] w-full bg-background">
         <div className="flex flex-col w-full gap-12">
           <div className="flex flex-col items-start gap-3">
-            <h1 className="text-title text-5xl font-bold">
+            <h1 className="text-title text-5xl font-bold ml-[-5px]">
               Oi, Sou o Fernando
             </h1>
             <p className="text-text w-3/4">
@@ -37,16 +37,19 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex items-center gap-2.5 cursor-pointer">
-            <a href="#">
+          <div className="flex items-center gap-2.5">
+            <a href="https://github.com/FernandoBrino" target="_blank">
               <FiGithub size={20} className="text-text" />
             </a>
 
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/in/fernando-brino"
+              target="_blank"
+            >
               <FiLinkedin size={20} className="text-text" />
             </a>
 
-            <a href="#">
+            <a href="https://wa.me/13981158644" target="_blank">
               <BsWhatsapp size={20} className="text-text" />
             </a>
           </div>
