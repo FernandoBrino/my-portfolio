@@ -88,7 +88,7 @@ export const Header = () => {
           )}
 
           <a
-            className="text-background px-4 py-1.5 bg-title rounded-xl"
+            className="text-background px-4 py-1.5 bg-title rounded-xl hover:opacity-50 duration-300"
             href="https://drive.google.com/file/d/1QqY3fC2bnDcEV66irdEB74FmM-DYQMba/view?usp=sharing"
             target="_blank"
           >

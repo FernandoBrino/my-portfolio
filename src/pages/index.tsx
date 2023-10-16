@@ -7,6 +7,8 @@ import { BsCircleFill, BsWhatsapp } from "react-icons/bs";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import Image from "next/image";
 import { skills } from "@/utils/skills";
+import { jobs } from "@/utils/jobs";
+import { ExperienceCard } from "@/components/ExperienceCard";
 
 export default function Home() {
   return (
@@ -183,8 +185,8 @@ export default function Home() {
         className="flex flex-col px-28 py-24 items-center justify-center w-full bg-background"
         id="skills"
       >
-        <Label title="Skills" />
-        <p className="text-text mt-4 mb-20">
+        <Label title="Habilidades" />
+        <p className="text-text mt-4 mb-12">
           Habilidades, ferramentas e tecnologias em que sou realmente bom:
         </p>
 
@@ -203,6 +205,22 @@ export default function Home() {
               </a>
               <p className="text-text">{skill.title}</p>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section
+        id="experience"
+        className="flex flex-col py-24 items-center justify-center w-full bg-sub-background"
+      >
+        <Label title="Experiência" />
+        <p className="text-text mt-4 mb-12">
+          Aqui está um pequeno resumo das minhas experiências recentes:
+        </p>
+
+        <div className="flex flex-col gap-12">
+          {jobs.map((job) => (
+            <ExperienceCard key={job.id} job={job} />
           ))}
         </div>
       </section>
