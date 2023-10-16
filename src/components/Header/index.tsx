@@ -6,6 +6,7 @@ import Link from "next/link";
 export const Header = () => {
   const [theme, setTheme] = useTheme();
   const [isClient, setIsClient] = useState(false);
+  const [styleOnScrollPage, setStyleOnScrollPage] = useState<string>("");
 
   useEffect(() => {
     setIsClient(true);
@@ -15,15 +16,33 @@ export const Header = () => {
     setTheme(theme);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setStyleOnScrollPage("sticky top-0 z-10");
+      } else {
+        setStyleOnScrollPage("");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="sticky py-4 px-[6.25rem] flex justify-between bg-background">
+    <div
+      className={`${styleOnScrollPage} w-full py-4 px-[6.25rem] flex justify-between bg-background`}
+    >
       <h1 className="text-title font-bold text-3xl">
         <Link href="#profile">&lt;FB /&gt;</Link>
       </h1>
       <div className="flex items-center">
         <nav className="flex gap-6 pr-6 border-r dark:border-card-background">
           <a
-            href="#"
+            href="#about"
             className="relative text-text hover:text-title after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-[-0.25rem] after:left-0 after:scale-x-0 after:hover:scale-x-100 after:origin-left after:duration-300 after:bg-title"
           >
             Sobre

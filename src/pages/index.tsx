@@ -6,6 +6,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { BsCircleFill, BsWhatsapp } from "react-icons/bs";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import Image from "next/image";
+import { skills } from "@/utils/skills";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <Header />
 
       <section
-        className="flex justify-center items-center p-[6.25rem] w-full bg-background"
+        className="flex justify-center items-center p-[6.25rem]  w-full bg-background"
         id="profile"
       >
         <div className="flex flex-col w-full gap-12">
@@ -37,7 +38,13 @@ export default function Home() {
             </div>
 
             <div className="flex gap-4 items-center">
-              <BsCircleFill size={8} className="text-[#10B981]" />
+              <div className="flex relative">
+                <BsCircleFill
+                  size={8}
+                  className="text-[#10B981] animate-pulse relative inline-flex"
+                />
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75"></span>
+              </div>
               <p className="text-text">Disponível para novos projetos</p>
             </div>
           </div>
@@ -160,19 +167,44 @@ export default function Home() {
                 implantação contínua, garantindo maior confiabilidade e
                 agilidade no desenvolvimento.
               </p>
+              <p className="text-text">
+                Estou empolgado com novos desafios e oportunidades para aplicar
+                minhas habilidades como Desenvolvedor Full Stack em projetos
+                inovadores. Acredito que minha experiência e dedicação são
+                atributos valiosos que posso oferecer à sua equipe. Estou sempre
+                a disposição para um bate-papo basta me contatar.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       <section
-        className="flex flex-col px-20 py-24 items-center w-full bg-background"
+        className="flex flex-col px-28 py-24 items-center justify-center w-full bg-background"
         id="skills"
       >
         <Label title="Skills" />
-        <p className="text-text mt-4 mb-12">
+        <p className="text-text mt-4 mb-20">
           Habilidades, ferramentas e tecnologias em que sou realmente bom:
         </p>
+
+        <div className="grid gap-y-12 grid-cols-8 w-full">
+          {skills.map((skill) => (
+            <div key={skill.id} className="flex flex-col gap-3 items-center">
+              <a href={skill.link} target="_blank">
+                <Image
+                  priority
+                  src={skill.image}
+                  alt=""
+                  width={64}
+                  height={64}
+                  className="transition-transform duration-300 hover:scale-110"
+                />
+              </a>
+              <p className="text-text">{skill.title}</p>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   );
