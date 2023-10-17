@@ -1,7 +1,7 @@
 import gabrielBorges from "@/assets/gabriel_borges.jpeg";
 import viniciusAndrade from "@/assets/vinicius_andrade.jpeg";
 
-export const testimonials = [
+export const recommendations = [
   {
     id: "1",
     name: "Gabriel Borges",
