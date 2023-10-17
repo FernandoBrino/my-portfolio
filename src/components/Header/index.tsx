@@ -48,13 +48,13 @@ export const Header = () => {
             Sobre
           </a>
           <a
-            href="#"
+            href="#projects"
             className="relative text-text hover:text-title after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-[-0.25rem] after:left-0 after:scale-x-0 after:hover:scale-x-100 after:origin-left after:duration-300 after:bg-title"
           >
-            Trabalho
+            Projetos
           </a>
           <a
-            href="#"
+            href="#testimonials"
             className="relative text-text hover:text-title after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-[-0.25rem] after:left-0 after:scale-x-0 after:hover:scale-x-100 after:origin-left after:duration-300 after:bg-title"
           >
             Testemunhas
