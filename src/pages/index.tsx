@@ -9,6 +9,10 @@ import Image from "next/image";
 import { skills } from "@/utils/skills";
 import { jobs } from "@/utils/jobs";
 import { ExperienceCard } from "@/components/ExperienceCard";
+import { projects } from "@/utils/projects";
+import { ProjectCard } from "@/components/ProjectCard";
+import { testimonials } from "@/utils/testimonials";
+import { TestimonyCard } from "@/components/TestimonyCard";
 
 export default function Home() {
   return (
@@ -24,7 +28,7 @@ export default function Home() {
             <h1 className="text-title text-5xl font-bold ml-[-5px]">
               Oi, Sou o Fernando
             </h1>
-            <p className="text-text w-3/4">
+            <p className="text-text w-3/4 leading-6">
               Olá, prazer em conhecê-lo! Eu sou o Fernando, um Desenvolvedor
               Full Stack apaixonado por Javascript e Typescript. Minha bagagem
               inclui React.js, Node.js, trabalhando com bancos de dados, testes
@@ -114,7 +118,7 @@ export default function Home() {
               Cusioso ? Aqui um pouquinho sobre mim:
             </h2>
 
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 leading-6">
               <p className="text-text">
                 Meu nome é Fernando sou Desenvolvedor Full Stack, apaixonado por
                 criar soluções tecnológicas inovadoras. Com mais de três anos de
@@ -211,9 +215,9 @@ export default function Home() {
 
       <section
         id="experience"
-        className="flex flex-col py-24 items-center justify-center w-full bg-sub-background"
+        className="flex flex-col px-28 py-24 items-center justify-center w-full bg-sub-background"
       >
-        <Label title="Experiência" />
+        <Label title="Experiências" />
         <p className="text-text mt-4 mb-12">
           Aqui está um pequeno resumo das minhas experiências recentes:
         </p>
@@ -221,6 +225,38 @@ export default function Home() {
         <div className="flex flex-col gap-12">
           {jobs.map((job) => (
             <ExperienceCard key={job.id} job={job} />
+          ))}
+        </div>
+      </section>
+
+      <section
+        id="projects"
+        className="flex flex-col px-28 py-24 items-center justify-center w-full bg-background"
+      >
+        <Label title="Projetos" />
+        <p className="text-text mt-4 mb-12">
+          Alguns dos projetos que construí:
+        </p>
+
+        <div className="flex flex-col gap-12">
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
+      </section>
+
+      <section
+        id="testimonials"
+        className="flex flex-col px-28 py-24 items-center justify-center w-full bg-sub-background"
+      >
+        <Label title="Testemunhas" />
+        <p className="text-text mt-4 mb-12">
+          Pessoas que presenciaram meu trabalho:
+        </p>
+
+        <div className="flex gap-12">
+          {testimonials.map((testimony) => (
+            <TestimonyCard key={testimony.id} testimony={testimony} />
           ))}
         </div>
       </section>
