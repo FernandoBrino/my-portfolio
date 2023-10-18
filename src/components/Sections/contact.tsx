@@ -2,10 +2,17 @@ import { HiOutlineMail } from "react-icons/hi";
 import { Label } from "../Label";
 import { FiCopy, FiGithub, FiLinkedin } from "react-icons/fi";
 import { BsTelephone, BsWhatsapp } from "react-icons/bs";
+import { useState } from "react";
 
 export const ContactSection = () => {
+  const [clipboardText, setClipboardText] = useState<string>("");
+
   const handleCopyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text);
+    setClipboardText(text);
+    setTimeout(() => {
+      setClipboardText("");
+    }, 1000);
   };
 
   return (
@@ -26,20 +33,36 @@ export const ContactSection = () => {
             <p className="text-title text-3xl font-semibold">
               fernandobrino11@gmail.com
             </p>
-            <FiCopy
-              size={32}
-              className="text-text cursor-pointer duration-300 hover:text-blue-300"
-              onClick={() => handleCopyToClipboard("fernandobrino11@gmail.com")}
-            />
+            <div className="relative">
+              <FiCopy
+                size={32}
+                className="text-text cursor-pointer duration-300 hover:text-blue-300"
+                onClick={() =>
+                  handleCopyToClipboard("fernandobrino11@gmail.com")
+                }
+              />
+              {clipboardText === "fernandobrino11@gmail.com" && (
+                <span className="absolute top-[-40px] duration-300 bg-label p-2 rounded-lg text-sm text-text">
+                  Copiado!
+                </span>
+              )}
+            </div>
           </div>
           <div className="flex gap-5 items-center">
             <BsTelephone size={32} className="text-text" />
             <p className="text-title text-3xl font-semibold">+55 13981158644</p>
-            <FiCopy
-              size={32}
-              className="text-text cursor-pointer duration-300 hover:text-blue-300"
-              onClick={() => handleCopyToClipboard("+55 13981158644")}
-            />
+            <div className="relative">
+              <FiCopy
+                size={32}
+                className="text-text cursor-pointer hover:text-blue-300"
+                onClick={() => handleCopyToClipboard("+55 13981158644")}
+              />
+              {clipboardText === "+55 13981158644" && (
+                <span className="absolute top-[-40px] bg-label p-2 rounded-lg text-sm text-text">
+                  Copiado!
+                </span>
+              )}
+            </div>
           </div>
         </div>
 
