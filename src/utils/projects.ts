@@ -15,7 +15,7 @@ export const projects = [
       "React-redux",
       "React-query",
       "React-hook-form",
-      "Redux-toolki",
+      "Redux-toolkit",
       "React-loading-skeleton",
       "Zod",
     ],
