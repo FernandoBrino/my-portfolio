@@ -18,8 +18,10 @@ export const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setStyleOnScrollPage("sticky top-0 z-10");
+      if (window.scrollY > 70) {
+        setStyleOnScrollPage(
+          "sticky top-0 z-10 border-b border-slate-50/[0.06] bg-transparent backdrop-blur"
+        );
       } else {
         setStyleOnScrollPage("");
       }
@@ -34,7 +36,7 @@ export const Header = () => {
 
   return (
     <div
-      className={`${styleOnScrollPage} w-full py-4 px-[6.25rem] flex justify-between bg-background`}
+      className={`${styleOnScrollPage} duration-300 w-full py-4 px-[6.25rem] flex justify-between bg-background`}
     >
       <h1 className="text-title font-bold text-3xl">
         <Link href="#profile">&lt;FB /&gt;</Link>
