@@ -4,26 +4,26 @@ import aboutProfile from "@/assets/about_profile.jpeg";
 
 export const AboutSection = () => (
   <section
-    className="flex flex-col items-center justify-center gap-12  px-28 py-24 bg-sub-background"
+    className="flex flex-col items-center justify-center gap-12 px-4 py-16 bg-sub-background lg:px-28 lg:py-24"
     id="about"
   >
     <Label title="Sobre mim" />
 
-    <div className="flex justify-center items-center w-full">
-      <div className="flex w-2/4">
+    <div className="flex flex-col mt-24 gap-12 justify-center items-center w-full lg:flex-row">
+      <div className="flex items-center justify-center w-2/4">
         <div className="relative">
           <Image
             src={aboutProfile}
             alt=""
             width={400}
             height={480}
-            className="absolute left-10 bottom-10 border-[6px] border-sub-background"
+            className="absolute right-5 bottom-5 border-[6px] border-sub-background lg:left-10 lg:bottom-10"
           />
-          <div className="bg-label w-[25rem] h-[30rem] border-[6px] border-sub-background"></div>
+          <div className="bg-label w-[27.5rem] h-[30rem] border-[6px] border-sub-background lg:w-[25rem]"></div>
         </div>
       </div>
 
-      <div className="flex flex-col gap-6 w-2/4">
+      <div className="flex flex-col w-full gap-6 lg:w-2/4">
         <h2 className="text-title text-3xl">
           Curioso ? Aqui um pouquinho sobre mim:
         </h2>

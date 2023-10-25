@@ -18,7 +18,7 @@ export const TestimonyCard: FC<Props> = ({ testimony }) => {
     <a
       href={testimony.link}
       target="_blank"
-      className="flex flex-col px-12 pt-12 pb-24 gap-6 items-center bg-card-background rounded-xl shadow-lg duration-300 hover:shadow-blue-300 hover:translate-y-[-4px]"
+      className="flex flex-col p-8 gap-6 items-center bg-card-background rounded-xl shadow-lg duration-300 hover:shadow-blue-300 hover:translate-y-[-4px] lg:px-12 lg:pt-12 lg:pb-24"
     >
       <div>
         <Image

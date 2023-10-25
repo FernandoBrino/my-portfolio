@@ -1,5 +1,6 @@
 import { useTheme } from "@/hooks/useTheme";
 import { BsMoonStars, BsSun } from "react-icons/bs";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
@@ -36,12 +37,12 @@ export const Header = () => {
 
   return (
     <div
-      className={`${styleOnScrollPage} duration-300 w-full py-4 px-[6.25rem] flex justify-between bg-background`}
+      className={`${styleOnScrollPage} duration-300 w-full p-4 flex items-center justify-between bg-background lg:py-4 lg:px-[6.25rem]`}
     >
       <h1 className="text-title font-bold text-3xl">
         <Link href="#profile">&lt;FB /&gt;</Link>
       </h1>
-      <div className="flex items-center">
+      <div className="hidden lg:flex lg:items-center">
         <nav className="flex gap-6 pr-6 border-r dark:border-card-background">
           <a
             href="#about"
@@ -98,6 +99,8 @@ export const Header = () => {
           </a>
         </div>
       </div>
+
+      <RxHamburgerMenu size={24} className="text-text lg:hidden" />
     </div>
   );
 };

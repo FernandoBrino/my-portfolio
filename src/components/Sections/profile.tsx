@@ -6,7 +6,7 @@ import profilePicture from "@/assets/profile.jpeg";
 
 export const ProfileSection = () => (
   <section
-    className="flex justify-center items-center p-[6.25rem]  w-full bg-background"
+    className="flex flex-col gap-12 justify-center items-center px-4 py-16 w-full bg-background lg:flex-row lg:gap-0 lg:p-[6.25rem]"
     id="profile"
   >
     <div className="flex flex-col w-full gap-12">
@@ -14,7 +14,7 @@ export const ProfileSection = () => (
         <h1 className="text-title text-5xl font-bold ml-[-5px]">
           Oi, Sou o Fernando
         </h1>
-        <p className="text-text w-3/4 leading-6">
+        <p className="text-text w-full leading-6 lg:w-3/4">
           Olá, prazer em conhecê-lo! Eu sou o Fernando, um Desenvolvedor Full
           Stack apaixonado por Javascript e Typescript. Minha bagagem inclui
           React.js, Node.js, trabalhando com bancos de dados, testes e
@@ -64,15 +64,15 @@ export const ProfileSection = () => (
       </div>
     </div>
 
-    <div className="relative">
+    <div className="relative order-first lg:order-last">
       <Image
         src={profilePicture}
         alt=""
         width={280}
         height={320}
-        className="absolute right-10 bottom-10 border-[6px] border-white dark:border-[#030712]"
+        className="absolute right-5 bottom-5 border-[6px] border-white dark:border-[#030712] lg:right-10 lg:bottom-10"
       />
-      <div className="bg-label w-[17.5rem] h-72 border-[6px] border-white dark:border-[#030712]"></div>
+      <div className="bg-label w-[20rem] h-72 border-[6px] border-white dark:border-[#030712] lg:w-[17.5rem]"></div>
     </div>
   </section>
 );

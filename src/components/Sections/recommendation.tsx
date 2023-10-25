@@ -4,7 +4,7 @@ import { TestimonyCard } from "../TestimonyCard";
 
 export const RecommendationSection = () => (
   <section
-    className="flex flex-col px-28 py-24 items-center justify-center w-full bg-sub-background"
+    className="flex flex-col px-4 py-12 items-center justify-center w-full bg-sub-background lg:px-28 lg:py-24"
     id="recommendations"
   >
     <Label title="Recomendações" />
@@ -12,7 +12,7 @@ export const RecommendationSection = () => (
       Pessoas que presenciaram meu trabalho:
     </p>
 
-    <div className="flex gap-12">
+    <div className="flex flex-col gap-6 lg:flex-row lg:gap-12">
       {recommendations.map((testimony) => (
         <TestimonyCard key={testimony.id} testimony={testimony} />
       ))}

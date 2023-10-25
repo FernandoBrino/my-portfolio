@@ -4,7 +4,7 @@ import { skills } from "@/utils/skills";
 
 export const SkillSection = () => (
   <section
-    className="flex flex-col px-28 py-24 items-center justify-center w-full bg-background"
+    className="flex flex-col px-4 py-12 items-center justify-center w-full bg-background lg:px-28 lg:py-24"
     id="skills"
   >
     <Label title="Habilidades" />
@@ -12,7 +12,7 @@ export const SkillSection = () => (
       Habilidades, ferramentas e tecnologias em que sou realmente bom:
     </p>
 
-    <div className="grid gap-y-12 grid-cols-8 w-full">
+    <div className="grid grid-cols-4 gap-x-4 gap-y-14 w-full lg:grid-cols-8 lg:gap-x-20 lg:gap-y-12">
       {skills.map((skill) => (
         <div key={skill.id} className="flex flex-col gap-3 items-center">
           <a href={skill.link} target="_blank">

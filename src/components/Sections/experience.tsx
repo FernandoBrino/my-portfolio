@@ -4,7 +4,7 @@ import { Label } from "../Label";
 
 export const ExperienceSection = () => (
   <section
-    className="flex flex-col px-28 py-24 items-center justify-center w-full bg-sub-background"
+    className="flex flex-col px-4 py-12 items-center justify-center w-full bg-sub-background lg:px-28 lg:py-24"
     id="experience"
   >
     <Label title="Experiências" />
@@ -12,7 +12,7 @@ export const ExperienceSection = () => (
       Aqui está um pequeno resumo das minhas experiências recentes:
     </p>
 
-    <div className="flex flex-col gap-12">
+    <div className="flex flex-col gap-6 lg:gap-12">
       {jobs.map((job) => (
         <ExperienceCard key={job.id} job={job} />
       ))}

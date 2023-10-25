@@ -4,13 +4,13 @@ import { ProjectCard } from "../ProjectCard";
 
 export const ProjectSection = () => (
   <section
-    className="flex flex-col px-28 py-24 items-center justify-center w-full bg-background"
+    className="flex flex-col px-4 py-12 items-center justify-center w-full bg-background lg:px-28 lg:py-24"
     id="projects"
   >
     <Label title="Projetos" />
     <p className="text-text mt-4 mb-12">Alguns dos projetos que construí:</p>
 
-    <div className="flex flex-col gap-12">
+    <div className="flex flex-col gap-6 lg:gap-12">
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} />
       ))}
