@@ -4,7 +4,7 @@ import aboutProfile from "@/assets/about_profile.jpeg";
 
 export const AboutSection = () => (
   <section
-    className="flex flex-col items-center justify-center gap-12 px-4 py-16 bg-sub-background lg:px-28 lg:py-24"
+    className="flex flex-col items-center justify-center  px-4 py-16 bg-sub-background lg:px-28 lg:py-24"
     id="about"
   >
     <Label title="Sobre mim" />
@@ -15,7 +15,7 @@ export const AboutSection = () => (
           <Image
             src={aboutProfile}
             alt=""
-            className="absolute w-[17.5rem] h-[23rem] left-5 bottom-5 border-[6px] border-sub-background lg:left-10 lg:bottom-10 lg:w-[24rem] lg:h-[30rem]"
+            className="absolute w-[17.5rem] h-[23rem] left-5 bottom-5 border-[6px] border-sub-background lg:left-10 lg:bottom-10 lg:w-[25rem] lg:h-[30rem]"
           />
           <div className="bg-label w-[20rem] h-[22.5rem] border-[6px] border-sub-background lg:w-[25rem] lg:h-[30rem]"></div>
         </div>
