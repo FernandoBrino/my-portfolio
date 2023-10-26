@@ -17,11 +17,11 @@ export const ContactSection = () => {
 
   return (
     <section
-      className="flex flex-col px-28 py-24 items-center justify-center w-full bg-background"
+      className="flex flex-col px-4 py-12 items-center justify-center w-full bg-background lg:px-28 lg:py-24"
       id="contact"
     >
       <Label title="Contato" />
-      <p className="text-text mt-4 mb-12 w-2/4 text-center leading-6">
+      <p className="text-text mt-4 mb-12 w-full text-center leading-6 lg:w-2/4">
         E agora? Sinta-se confortável para entrar em contato comigo caso esteja
         buscando por um desenvolvedor ou simplesmente queira se conectar.
       </p>
@@ -29,36 +29,36 @@ export const ContactSection = () => {
       <div className="flex flex-col gap-12">
         <div className="flex flex-col gap-5 items-center">
           <div className="flex gap-5 items-center">
-            <HiOutlineMail size={32} className="text-text" />
-            <p className="text-title text-3xl font-semibold">
+            <HiOutlineMail className="text-text text-xl lg:text-[32px]" />
+            <p className="text-title text-lg lg:text-3xl font-semibold">
               fernandobrino11@gmail.com
             </p>
             <div className="relative">
               <FiCopy
-                size={32}
-                className="text-text cursor-pointer duration-300 hover:text-blue-300"
+                className="text-text cursor-pointer duration-300 hover:text-blue-300 text-xl lg:text-[32px]"
                 onClick={() =>
                   handleCopyToClipboard("fernandobrino11@gmail.com")
                 }
               />
               {clipboardText === "fernandobrino11@gmail.com" && (
-                <span className="absolute top-[-40px] duration-300 bg-label p-2 rounded-lg text-sm text-text">
+                <span className="absolute top-[-40px] right-1 duration-300 bg-label p-2 rounded-lg text-sm text-text">
                   Copiado!
                 </span>
               )}
             </div>
           </div>
           <div className="flex gap-5 items-center">
-            <BsTelephone size={32} className="text-text" />
-            <p className="text-title text-3xl font-semibold">+55 13981158644</p>
+            <BsTelephone className="text-text text-xl lg:text-[32px]" />
+            <p className="text-title text-lg lg:text-3xl font-semibold">
+              +55 13981158644
+            </p>
             <div className="relative">
               <FiCopy
-                size={32}
-                className="text-text cursor-pointer hover:text-blue-300"
+                className="text-text cursor-pointer hover:text-blue-300 text-xl lg:text-[32px]"
                 onClick={() => handleCopyToClipboard("+55 13981158644")}
               />
               {clipboardText === "+55 13981158644" && (
-                <span className="absolute top-[-40px] bg-label p-2 rounded-lg text-sm text-text">
+                <span className="absolute top-[-40px] right-1 bg-label p-2 rounded-lg text-sm text-text">
                   Copiado!
                 </span>
               )}

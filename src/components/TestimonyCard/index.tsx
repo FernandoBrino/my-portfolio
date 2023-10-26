@@ -29,9 +29,7 @@ export const TestimonyCard: FC<Props> = ({ testimony }) => {
           className="rounded-full"
         />
       </div>
-      <p className="text-text w-96 leading-6">
-        &quot;{testimony.comment}&quot;
-      </p>
+      <p className="text-text  leading-6">&quot;{testimony.comment}&quot;</p>
       <div className="text-center">
         <h1 className="mb-1 text-title text-xl font-semibold">
           {testimony.name}
