@@ -1,21 +1,13 @@
-import { useTheme } from "@/hooks/useTheme";
-import { BsMoonStars, BsSun } from "react-icons/bs";
+import { useContext, useEffect, useState } from "react";
+import { MenuMobileContext } from "@/contexts/MenuMobileContext";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { useEffect, useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
+import { SwitchThemeButton } from "../SwitchThemeButton";
 
 export const Header = () => {
-  const [theme, setTheme] = useTheme();
-  const [isClient, setIsClient] = useState(false);
+  const { isMenuOpen, toggleMenuOpen } = useContext(MenuMobileContext);
   const [styleOnScrollPage, setStyleOnScrollPage] = useState<string>("");
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  const handleSwitchTheme = (theme: "dark" | "light") => {
-    setTheme(theme);
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,6 +34,8 @@ export const Header = () => {
       <h1 className="text-title font-bold text-3xl">
         <Link href="#profile">&lt;FB /&gt;</Link>
       </h1>
+
+      {/* Big screens navigation menu */}
       <div className="hidden lg:flex lg:items-center">
         <nav className="flex gap-6 pr-6 border-r dark:border-card-background">
           <a
@@ -71,24 +65,7 @@ export const Header = () => {
         </nav>
 
         <div className="flex items-center ml-6 gap-4">
-          {theme === "dark" && isClient ? (
-            <button
-              onClick={() => handleSwitchTheme("light")}
-              className="hover:bg-label duration-300 p-2 rounded-lg"
-            >
-              <BsMoonStars
-                size={20}
-                className="hover:cursor-pointer text-text"
-              />
-            </button>
-          ) : (
-            <button
-              onClick={() => handleSwitchTheme("dark")}
-              className="hover:bg-label duration-300 p-2 rounded-lg"
-            >
-              <BsSun size={20} className="hover:cursor-pointer" />
-            </button>
-          )}
+          <SwitchThemeButton />
 
           <a
             className="text-background px-4 py-1.5 bg-title rounded-xl hover:opacity-50 duration-300"
@@ -100,7 +77,29 @@ export const Header = () => {
         </div>
       </div>
 
-      <RxHamburgerMenu size={24} className="text-text lg:hidden" />
+      <RxHamburgerMenu
+        size={24}
+        className="text-text lg:hidden"
+        onClick={toggleMenuOpen}
+      />
+
+      {isMenuOpen ? (
+        <div className="absolute top-0 left-0 z-10 w-screen h-screen bg-background">
+          <div>
+            <h1 className="text-title font-bold text-3xl">
+              <Link href="#profile">&lt;FB /&gt;</Link>
+            </h1>
+
+            <AiOutlineClose
+              size={24}
+              className="text-text"
+              onClick={toggleMenuOpen}
+            />
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

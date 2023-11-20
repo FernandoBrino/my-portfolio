@@ -7,7 +7,12 @@ export const jobs = [
     id: "1",
     title: "Jitterbit",
     period: "out de 2023 - atualmente",
-    topics: [],
+    topics: [
+      "Desenvolvimento de fluxos de código com LCAP.",
+      "Desenvolvimento e refatoração de códigos.",
+      "Otimização de código.",
+      "Construção de integrações",
+    ],
     image: jitterbitLogo,
   },
   {
