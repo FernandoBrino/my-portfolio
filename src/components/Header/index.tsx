@@ -68,7 +68,7 @@ export const Header = () => {
           <SwitchThemeButton />
 
           <a
-            className="text-background px-4 py-1.5 bg-title rounded-xl hover:opacity-50 duration-300"
+            className="text-background px-4 py-2 bg-title rounded-xl hover:opacity-50 duration-300"
             href="https://drive.google.com/file/d/1QqY3fC2bnDcEV66irdEB74FmM-DYQMba/view?usp=sharing"
             target="_blank"
           >
@@ -126,7 +126,7 @@ export const Header = () => {
 
           <div className="flex w-full p-4 items-center justify-center ">
             <a
-              className="w-[350px] text-background px-4 py-1.5 bg-title rounded-xl hover:opacity-50 duration-300 text-center"
+              className="w-[350px] text-background px-4 py-2 bg-title rounded-xl hover:opacity-50 duration-300 text-center"
               href="https://drive.google.com/file/d/1QqY3fC2bnDcEV66irdEB74FmM-DYQMba/view?usp=sharing"
               target="_blank"
             >
