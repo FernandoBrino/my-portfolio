@@ -85,8 +85,11 @@ export const Header = () => {
 
       {isMenuOpen ? (
         <div className="absolute top-0 left-0 z-10 w-screen h-screen bg-background">
-          <div>
-            <h1 className="text-title font-bold text-3xl">
+          <div className="flex items-center justify-between p-4 border-b-[1px] border-card-background">
+            <h1
+              className="text-title font-bold text-3xl"
+              onClick={toggleMenuOpen}
+            >
               <Link href="#profile">&lt;FB /&gt;</Link>
             </h1>
 
@@ -95,6 +98,40 @@ export const Header = () => {
               className="text-text"
               onClick={toggleMenuOpen}
             />
+          </div>
+
+          <nav className="flex flex-col p-4 gap-4 border-b-[1px] border-card-background">
+            <a href="#about" className="text-text" onClick={toggleMenuOpen}>
+              Sobre
+            </a>
+            <a href="#projects" className="text-text" onClick={toggleMenuOpen}>
+              Projetos
+            </a>
+            <a
+              href="#recommendations"
+              className="text-text"
+              onClick={toggleMenuOpen}
+            >
+              Recomendações
+            </a>
+            <a href="#contact" className="text-text" onClick={toggleMenuOpen}>
+              Contato
+            </a>
+          </nav>
+
+          <div className="flex justify-between p-4 items-center mb-6">
+            <p className="text-text">Switch Theme</p>
+            <SwitchThemeButton />
+          </div>
+
+          <div className="flex w-full p-4 items-center justify-center ">
+            <a
+              className="w-[350px] text-background px-4 py-1.5 bg-title rounded-xl hover:opacity-50 duration-300 text-center"
+              href="https://drive.google.com/file/d/1QqY3fC2bnDcEV66irdEB74FmM-DYQMba/view?usp=sharing"
+              target="_blank"
+            >
+              Download CV
+            </a>
           </div>
         </div>
       ) : (

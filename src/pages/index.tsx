@@ -1,23 +1,33 @@
 import { Header } from "@/components/Header";
-import { AboutSection } from "@/components/Sections/about";
-import { ContactSection } from "@/components/Sections/contact";
-import { ExperienceSection } from "@/components/Sections/experience";
-import { ProfileSection } from "@/components/Sections/profile";
-import { ProjectSection } from "@/components/Sections/project";
-import { RecommendationSection } from "@/components/Sections/recommendation";
-import { SkillSection } from "@/components/Sections/skill";
+import { AboutSection } from "@/components/Sections/About";
+import { ContactSection } from "@/components/Sections/Contact";
+import { ExperienceSection } from "@/components/Sections/Experience";
+import { ProfileSection } from "@/components/Sections/Profile";
+import { ProjectSection } from "@/components/Sections/Project";
+import { RecommendationSection } from "@/components/Sections/Recommendation";
+import { SkillSection } from "@/components/Sections/Skill";
+import { MenuMobileContext } from "@/contexts/MenuMobileContext";
+import { useContext } from "react";
 
 export default function Home() {
+  const { isMenuOpen } = useContext(MenuMobileContext);
+
   return (
     <>
       <Header />
-      <ProfileSection />
-      <AboutSection />
-      <SkillSection />
-      <ExperienceSection />
-      <ProjectSection />
-      <RecommendationSection />
-      <ContactSection />
+      {isMenuOpen ? (
+        ""
+      ) : (
+        <>
+          <ProfileSection />
+          <AboutSection />
+          <SkillSection />
+          <ExperienceSection />
+          <ProjectSection />
+          <RecommendationSection />
+          <ContactSection />
+        </>
+      )}
     </>
   );
 }
