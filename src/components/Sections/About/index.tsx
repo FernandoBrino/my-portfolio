@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Label } from "../Label";
+import { Label } from "../../Label";
 import aboutProfile from "@/assets/about_profile.jpg";
 
 export const AboutSection = () => (
