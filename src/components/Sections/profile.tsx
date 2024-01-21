@@ -63,7 +63,6 @@ export const ProfileSection = () => (
         </a>
       </div>
     </div>
-
     <div className="relative order-first lg:order-last">
       <Image
         src={profilePicture}
