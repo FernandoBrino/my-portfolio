@@ -1,5 +1,5 @@
 import { HiOutlineMail } from "react-icons/hi";
-import { Label } from "../Label";
+import { Label } from "../../Label";
 import { FiCopy, FiGithub, FiLinkedin } from "react-icons/fi";
 import { BsTelephone, BsWhatsapp } from "react-icons/bs";
 import { useState } from "react";

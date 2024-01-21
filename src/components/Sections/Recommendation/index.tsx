@@ -1,6 +1,6 @@
 import { recommendations } from "@/utils/recommendations";
-import { Label } from "../Label";
-import { TestimonyCard } from "../TestimonyCard";
+import { Label } from "../../Label";
+import { TestimonyCard } from "../../TestimonyCard";
 
 export const RecommendationSection = () => (
   <section

@@ -1,6 +1,6 @@
 import { jobs } from "@/utils/jobs";
-import { ExperienceCard } from "../ExperienceCard";
-import { Label } from "../Label";
+import { ExperienceCard } from "../../ExperienceCard";
+import { Label } from "../../Label";
 
 export const ExperienceSection = () => (
   <section

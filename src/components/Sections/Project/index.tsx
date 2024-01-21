@@ -1,6 +1,6 @@
 import { projects } from "@/utils/projects";
-import { Label } from "../Label";
-import { ProjectCard } from "../ProjectCard";
+import { Label } from "../../Label";
+import { ProjectCard } from "../../ProjectCard";
 
 export const ProjectSection = () => (
   <section

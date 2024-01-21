@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Label } from "../Label";
+import { Label } from "../../Label";
 import { skills } from "@/utils/skills";
 
 export const SkillSection = () => (
