@@ -15,7 +15,7 @@ export const AboutSection = () => (
           <Image
             src={aboutProfile}
             alt=""
-            className="absolute w-[17.5rem] h-[23rem] left-5 bottom-5 border-[6px] border-sub-background lg:left-10 lg:bottom-10 lg:w-[30rem] lg:h-[30rem]"
+            className="absolute w-[17.5rem] h-[23rem] left-5 bottom-5 border-[6px] border-sub-background lg:left-10 lg:bottom-10 lg:w-[40rem] lg:h-[30rem]"
           />
           <div className="bg-label w-[20rem] h-[22.5rem] border-[6px] border-sub-background lg:w-[25rem] lg:h-[30rem]"></div>
         </div>

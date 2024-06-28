@@ -45,7 +45,7 @@ export const skills = [
     id: "7",
     title: "Nest",
     image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg",
     link: "https://nestjs.com",
   },
   {
