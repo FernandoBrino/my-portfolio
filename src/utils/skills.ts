@@ -59,7 +59,7 @@ export const skills = [
     id: "9",
     title: "Tailwind",
     image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     link: "https://tailwindcss.com",
   },
   {
