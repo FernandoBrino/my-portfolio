@@ -7,9 +7,9 @@ export const SkillSection = () => (
     className="flex flex-col px-4 py-12 items-center justify-center w-full bg-background lg:px-28 lg:py-24"
     id="skills"
   >
-    <Label title="Habilidades" />
+    <Label title="Skills" />
     <p className="text-text mt-4 mb-12">
-      Habilidades, ferramentas e tecnologias em que sou realmente bom:
+      Skills, tools, and technologies that I'm really good at:
     </p>
 
     <div className="grid grid-cols-4 gap-x-4 gap-y-14 w-full lg:grid-cols-8 lg:gap-x-20 lg:gap-y-12">

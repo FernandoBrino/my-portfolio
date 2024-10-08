@@ -12,14 +12,14 @@ export const ProfileSection = () => (
     <div className="flex flex-col w-full gap-12">
       <div className="flex flex-col items-start gap-3">
         <h1 className="text-title text-5xl font-bold ml-[-5px]">
-          Oi, Sou o Fernando
+          Hello, I'm Fernando
         </h1>
         <p className="text-text w-full leading-6 lg:w-3/4">
-          Olá, prazer em conhecê-lo! Eu sou o Fernando, um Desenvolvedor Full
-          Stack apaixonado por Javascript e Typescript. Minha bagagem inclui
-          React.js, Node.js, trabalhando com bancos de dados, testes e
-          automação. Estou sempre animado para contribuir em projetos inovadores
-          e de alta qualidade.
+          Hello, nice to meet you! I'm Fernando, a Full Stack Developer
+          passionate about JavaScript and TypeScript. My background includes
+          React.js, Node.js, working with databases, testing, and automation.
+          I'm always excited to contribute to innovative and high-quality
+          projects.
         </p>
       </div>
 
@@ -37,7 +37,7 @@ export const ProfileSection = () => (
             />
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75"></span>
           </div>
-          <p className="text-text">Disponível para novos projetos</p>
+          <p className="text-text">Available for new projects.</p>
         </div>
       </div>
 

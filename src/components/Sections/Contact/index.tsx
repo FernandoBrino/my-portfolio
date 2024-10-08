@@ -20,10 +20,10 @@ export const ContactSection = () => {
       className="flex flex-col px-4 py-12 items-center justify-center w-full bg-background lg:px-28 lg:py-24"
       id="contact"
     >
-      <Label title="Contato" />
+      <Label title="Contact" />
       <p className="text-text mt-4 mb-12 w-full text-center leading-6 lg:w-2/4">
-        E agora? Sinta-se confortável para entrar em contato comigo caso esteja
-        buscando por um desenvolvedor ou simplesmente queira se conectar.
+        And now? Feel free to reach out to me if you’re looking for a developer
+        or simply want to connect.
       </p>
 
       <div className="flex flex-col gap-12">
@@ -42,7 +42,7 @@ export const ContactSection = () => {
               />
               {clipboardText === "fernandobrino11@gmail.com" && (
                 <span className="absolute top-[-40px] right-1 duration-300 bg-label p-2 rounded-lg text-sm text-text">
-                  Copiado!
+                  Copied!
                 </span>
               )}
             </div>
@@ -59,7 +59,7 @@ export const ContactSection = () => {
               />
               {clipboardText === "+55 13981158644" && (
                 <span className="absolute top-[-40px] right-1 bg-label p-2 rounded-lg text-sm text-text">
-                  Copiado!
+                  Copied!
                 </span>
               )}
             </div>
@@ -68,7 +68,7 @@ export const ContactSection = () => {
 
         <div className="flex flex-col items-center gap-2">
           <p className="text-sm text-text">
-            Você também pode me encontrar nas seguintes plataformas!
+            You can also find me on the following platforms!
           </p>
           <div className="flex items-center gap-3">
             <a href="https://github.com/FernandoBrino" target="_blank">

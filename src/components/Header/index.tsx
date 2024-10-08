@@ -42,25 +42,25 @@ export const Header = () => {
             href="#about"
             className="relative text-text hover:text-title after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-[-0.25rem] after:left-0 after:scale-x-0 after:hover:scale-x-100 after:origin-left after:duration-300 after:bg-title"
           >
-            Sobre
+            About
           </a>
           <a
             href="#projects"
             className="relative text-text hover:text-title after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-[-0.25rem] after:left-0 after:scale-x-0 after:hover:scale-x-100 after:origin-left after:duration-300 after:bg-title"
           >
-            Projetos
+            Projects
           </a>
           <a
             href="#recommendations"
             className="relative text-text hover:text-title after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-[-0.25rem] after:left-0 after:scale-x-0 after:hover:scale-x-100 after:origin-left after:duration-300 after:bg-title"
           >
-            Recomendações
+            Recommendations
           </a>
           <a
             href="#contact"
             className="relative text-text hover:text-title after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-[-0.25rem] after:left-0 after:scale-x-0 after:hover:scale-x-100 after:origin-left after:duration-300 after:bg-title"
           >
-            Contato
+            Contact
           </a>
         </nav>
 
@@ -69,7 +69,7 @@ export const Header = () => {
 
           <a
             className="text-background px-4 py-2 bg-title rounded-xl hover:opacity-50 duration-300"
-            href="https://drive.google.com/file/d/1QqY3fC2bnDcEV66irdEB74FmM-DYQMba/view?usp=sharing"
+            href="https://drive.google.com/file/d/1uaX5N6l6MsXuCF9i8_g1R_8mxvT_rjtV/view?usp=sharing"
             target="_blank"
           >
             Download CV
@@ -127,7 +127,7 @@ export const Header = () => {
           <div className="flex w-full p-4 items-center justify-center ">
             <a
               className="w-[350px] text-background px-4 py-2 bg-title rounded-xl hover:opacity-50 duration-300 text-center"
-              href="https://drive.google.com/file/d/1QqY3fC2bnDcEV66irdEB74FmM-DYQMba/view?usp=sharing"
+              href="https://drive.google.com/file/d/1uaX5N6l6MsXuCF9i8_g1R_8mxvT_rjtV/view?usp=sharing"
               target="_blank"
             >
               Download CV
