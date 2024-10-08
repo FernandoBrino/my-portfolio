@@ -11,7 +11,7 @@ export const projects = [
       "Javascript",
       "Typescript",
       "React",
-      "Nextjs",
+      "Next.js",
       "React-redux",
       "React-query",
       "React-hook-form",
@@ -43,7 +43,7 @@ export const projects = [
     title: "Order Api",
     description: "An order management api, wich aims requests management.",
     techs: [
-      "Node",
+      "Node.js",
       "Fastify",
       "Docker",
       "Javascript",

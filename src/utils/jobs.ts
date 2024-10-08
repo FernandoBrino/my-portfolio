@@ -31,7 +31,7 @@ export const jobs = [
     title: "GBM Tech & Control",
     period: "Nov 2021 - Nov 2022",
     topics: [
-      "Refactoring and development of applications using Node.js, Nest.js, React, Next.js, Angular, and Ionic.",
+      "Refactoring and development of applications using Node.js, NestJS, React, Next.js, Angular, and Ionic.",
       "Development of logistic applications focused on Road, rail, and port activities.",
       "Optimization and maintenance of code.",
       "Versioning of code using Git.",

@@ -22,28 +22,28 @@ export const skills = [
   },
   {
     id: "4",
-    title: "Next",
+    title: "Next.js",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
     link: "https://nextjs.org",
   },
   {
     id: "5",
-    title: "Node",
+    title: "Node.js",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     link: "https://nodejs.org/ja",
   },
   {
     id: "6",
-    title: "Express",
+    title: "Fastify",
     image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-    link: "https://expressjs.com",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastify/fastify-original.svg",
+    link: "https://fastify.dev/",
   },
   {
     id: "7",
-    title: "Nest",
+    title: "NestJS",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg",
     link: "https://nestjs.com",
@@ -71,17 +71,17 @@ export const skills = [
   },
   {
     id: "11",
-    title: "Sass",
+    title: "AWS",
     image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
-    link: "https://sass-lang.com",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+    link: "https://aws.amazon.com/pt/",
   },
   {
     id: "12",
-    title: "Jest",
+    title: "Vitest",
     image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
-    link: "https://jestjs.io/pt-BR/",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitest/vitest-original.svg",
+    link: "https://vitest.dev/",
   },
   {
     id: "13",
@@ -99,7 +99,7 @@ export const skills = [
   },
   {
     id: "15",
-    title: "PostgreSql",
+    title: "PostgreSQL",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
     link: "https://www.postgresql.org",
