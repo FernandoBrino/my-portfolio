@@ -9,7 +9,7 @@ export const SkillSection = () => (
   >
     <Label title="Skills" />
     <p className="text-text mt-4 mb-12">
-      Skills, tools, and technologies that I'm really good at:
+      {`Skills, tools, and technologies that I'm really good at:`}
     </p>
 
     <div className="grid grid-cols-4 gap-x-4 gap-y-14 w-full lg:grid-cols-8 lg:gap-x-20 lg:gap-y-12">

@@ -12,14 +12,14 @@ export const ProfileSection = () => (
     <div className="flex flex-col w-full gap-12">
       <div className="flex flex-col items-start gap-3">
         <h1 className="text-title text-5xl font-bold ml-[-5px]">
-          Hello, I'm Fernando
+          {`Hello, I'm Fernando`}
         </h1>
         <p className="text-text w-full leading-6 lg:w-3/4">
-          Hello, nice to meet you! I'm Fernando, a Full Stack Developer
+          {` Hello, nice to meet you! I'm Fernando, a Full Stack Developer
           passionate about JavaScript and TypeScript. My background includes
           React.js, Node.js, working with databases, testing, and automation.
           I'm always excited to contribute to innovative and high-quality
-          projects.
+          projects.`}
         </p>
       </div>
 
