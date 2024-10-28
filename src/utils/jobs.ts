@@ -13,6 +13,7 @@ export const jobs = [
       "Development of integrations using Node.js and LCAP.",
       "Refactoring and optimization of code.",
     ],
+    link: "https://www.linkedin.com/company/jitterbitlatam",
     image: jitterbitLogo,
   },
   {
@@ -24,6 +25,7 @@ export const jobs = [
       "Refactoring and optimization of applications.",
       "Versioning of code using Git.",
     ],
+    link: "https://www.linkedin.com/company/emartim",
     image: emartimLogo,
   },
   {
@@ -36,6 +38,7 @@ export const jobs = [
       "Optimization and maintenance of code.",
       "Versioning of code using Git.",
     ],
+    link: "https://www.linkedin.com/company/gbmtech",
     image: gbmLogo,
   },
 ];

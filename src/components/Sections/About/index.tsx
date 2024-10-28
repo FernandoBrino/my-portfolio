@@ -33,7 +33,7 @@ export const AboutSection = () => (
             developing ERPs and management solutions. Worked in software houses,
             creating custom solutions for various industries. Currently focused
             on LCAP, integrations, and system analyses for large companies, such
-            as Livelo and Renner, in addition to develo ping inventory and
+            as Livelo and Renner, in addition to developing inventory and
             management applications for Sony.
           </p>
         </div>

@@ -5,6 +5,7 @@ interface Job {
   title: string;
   period: string;
   topics: string[];
+  link: string;
   image: StaticImageData;
 }
 
@@ -14,7 +15,7 @@ interface Props {
 
 export const ExperienceCard: FC<Props> = ({ job }) => {
   return (
-    <div className="flex flex-col p-8 bg-card-background gap-4 rounded-xl items-center shadow-lg lg:flex-row lg:gap-12">
+    <a className="flex flex-col p-8 bg-card-background gap-4 rounded-xl items-center shadow-lg lg:flex-row lg:gap-12 duration-300 hover:shadow-blue-300 hover:translate-y-[-4px]" href={job.link}>
       <div>
         <Image src={job.image} alt="" />
       </div>
@@ -35,6 +36,6 @@ export const ExperienceCard: FC<Props> = ({ job }) => {
           </ul>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
